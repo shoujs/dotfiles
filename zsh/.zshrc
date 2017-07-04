@@ -51,7 +51,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git python virtualenvwrapper ssh-agent pip fabric tmux brew mysql virtualenv ipython osx)
+plugins=(git python virtualenvwrapper ssh-agent pip fabric tmux brew mysql virtualenv ipython osx docker)
 
 source $ZSH/oh-my-zsh.sh
 source ~/.bin/tmuxinator.zsh
@@ -92,3 +92,4 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 export PATH="/usr/local/sbin:$PATH"
 export LANGUAGE=zh
 export EDITOR=vim
+if which swiftenv > /dev/null; then eval "$(swiftenv init -)"; fi
