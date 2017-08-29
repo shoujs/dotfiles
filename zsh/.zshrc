@@ -93,3 +93,4 @@ export PATH="/usr/local/sbin:$PATH"
 export LANGUAGE=zh
 export EDITOR=vim
 if which swiftenv > /dev/null; then eval "$(swiftenv init -)"; fi
+export PATH="/usr/local/opt/sqlite/bin:$PATH"
